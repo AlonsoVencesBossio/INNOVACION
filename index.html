@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jefazoo Club - Iniciar Sesión</title>
+    <link rel="stylesheet" href="style.css">
+    </head>
+<body>
+    <div class="login-container">
+        <div class="left-panel">
+            <div class="image-grid">
+                <img src="https://via.placeholder.com/200x150/f0f0f0/333333?text=Mascota+1" alt="Veterinaria Mascota 1">
+                <img src="https://via.placeholder.com/200x150/e0e0e0/333333?text=Mascota+2" alt="Veterinaria Mascota 2">
+                <img src="https://via.placeholder.com/200x150/d0d0d0/333333?text=Mascota+3" alt="Veterinaria Mascota 3">
+                <img src="https://via.placeholder.com/200x150/c0c0c0/333333?text=Mascota+4" alt="Veterinaria Mascota 4">
+            </div>
+            <div class="logo-section">
+                <img src="https://via.placeholder.com/150x150/FFA500/FFFFFF?text=Logo" alt="Jefazoo Club Logo" class="logo">
+                <p>Jefazoo Club</p>
+            </div>
+        </div>
+        <div class="right-panel">
+            <form class="login-form">
+                <h1>¡Hola de nuevo!</h1>
+                <p>¡Nos alegramos mucho de tenerte de vuelta!</p>
+
+                <div class="input-group">
+                    <input type="text" id="username" placeholder=" " required>
+                    <label for="username">Nombre de Usuario o Correo electrónico</label>
+                </div>
+
+                <div class="input-group password-group">
+                    <input type="password" id="password" placeholder=" " required>
+                    <label for="password">Contraseña</label>
+                    <span class="password-toggle" onclick="togglePasswordVisibility()">
+                        <svg class="eye-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 4.5c-4.97 0-9 4.03-9 9s4.03 9 9 9 9-4.03 9-9-4.03-9-9-9z"></path>
+                            <circle cx="12" cy="12" r="3"></circle>
+                            <line x1="2" y1="12" x2="22" y2="12"></line>
+                        </svg>
+                        <svg class="eye-off-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:none;">
+                            <path d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-4.97 0-9-4.03-9-9a9.99 9.99 0 0 1 3.53-7.56m-1.12-1.12L2 2m20 20L2 2"></path>
+                        </svg>
+                    </span>
+                </div>
+
+                <a href="#" class="forgot-password">¿Has olvidado tu contraseña?</a>
+
+                <button type="submit" class="login-button">Iniciar sesión</button>
+
+                <p class="register-text">¿Necesitas una cuenta? <a href="#" class="register-link">Regístrate</a></p>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
