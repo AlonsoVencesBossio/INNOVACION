@@ -34,14 +34,21 @@ body {
 }
 
 .left-panel {
-    flex: 1;
+    /* Tus estilos existentes para el panel izquierdo (ancho, altura, color de fondo, etc.) */
+    /* ... */
+
+    /* Propiedades para centrar el logo */
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 20px;
-    background-color: var(--primary-purple);
-    position: relative;
-    min-width: 300px;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center;     /* Centra verticalmente */
+    flex-direction: column; /* Asegura que el contenido se apile si hubiera más elementos */
+}
+
+.ecoapp-logo-central {
+    max-width: 80%; /* Ajusta el tamaño del logo, experimenta con este valor */
+    height: auto;   /* Mantiene la proporción */
+    padding: 20px;  /* Espacio alrededor del logo, si lo deseas */
+}
 }
 
 .image-grid {
